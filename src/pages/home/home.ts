@@ -7,8 +7,16 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  public pepperoni: boolean = true;
 
+  constructor(
+    public navCtrl: NavController
+  ) {
+
+  }
+
+  change() {
+    console.log(this.pepperoni);    
   }
 
 }
